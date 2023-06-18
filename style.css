@@ -1,0 +1,231 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #e3f2fd;
+}
+.wrapper {
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  margin-top: -8px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.editor-container,
+.preview-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2em 1em;
+  box-shadow: 0 1.25em 4em rgba(8, 6, 75, 0.15);
+  border-radius: 0.5em;
+}
+.editor-container {
+  margin: 0 0.6em 0 0;
+}
+.preview-container {
+  display: grid;
+  place-items: center;
+}
+input[type="file"] {
+  display: none;
+}
+label {
+  display: block;
+  background-color: #5372f0;
+  color: #ffffff;
+  width: 12em;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 1em 0;
+  border-radius: 0.3em;
+  margin: auto;
+  cursor: pointer;
+}
+.image-container {
+  margin-bottom: 1em;
+}
+img {
+  max-width: 100%;
+}
+button,
+a {
+  border: none;
+  outline: none;
+  place-items: center;
+  cursor: pointer;
+}
+.options-btn {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options-btn button {
+  background-color: #dceafe;
+  color: #5372f0;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  height: 3.2em;
+  width: 3.2em;
+  margin: 2px;
+}
+.options-btn button img {
+  width: 1.1em;
+}
+.action-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+#preview,
+#download {
+  background-color: #5372f0;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  color: #ffffff;
+  border-radius: 0.3em;
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.wrapper2 {
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  min-height: 100px;
+  border: 1px solid #ccc;
+}
+.router {
+  display: block;
+  float: left;
+  margin-left: 23px;
+  margin-top: 15px;
+}
+.icon {
+  display: block;
+  color: #5372f0;
+  font-size: 30px;
+}
+.icon-name {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  bottom: 5px;
+}
+.footer {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.onurkul {
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 1em;
+  }
+  img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .editor-container {
+    margin: 0 0 0.6em 0;
+  }
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+  }
+  .router {
+    margin-left: 60px !important;
+    margin-top: 15px !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+    min-height: 175px;
+  }
+  .router {
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    display: block;
+    color: #5372f0;
+    font-size: 30px;
+  }
+  .icon-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 15px;
+  }
+  .onurkul {
+    text-decoration: none;
+    color: #000;
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .router-center {
+    position: relative;
+    left: 20px;
+  }
+  .router-center2 {
+    position: relative;
+    left: 35px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper2 {
+    flex-wrap: wrap-reverse;
+    min-height: 140px;
+  }
+  .router {
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+  }
+  .icon {
+    display: block;
+    color: #5372f0;
+    font-size: 20px;
+  }
+  .icon-name {
+    position: relative;
+    bottom: 5px;
+    font-size: 14px;
+  }
+  .router-center {
+    position: relative;
+    left: 15px;
+  }
+  .router-center2 {
+    position: relative;
+    left: 35px;
+  }
+}
