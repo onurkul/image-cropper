@@ -1,4 +1,4 @@
-# Resim Kırpma
-Bu proje ile resimlerinizi kolay bir şekilde yeniden boyutlandırabilirsiniz.
+# Image Cropper
+With this project you can resize your images in an easy way.
 
-Örnek: https://onurkul.com.tr/araclar/resim-kirpma/
+Example: https://onurkul.com.tr/araclar/resim-kirpma/
